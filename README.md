@@ -148,19 +148,19 @@ where:
 ### Gradient Calculation
 To find the gradient, we need to compute the partial derivatives of the loss function with respect to the weights and bias. The gradient can be derived as follows:
 
-1. **Gradient with respect to weights:**  
-   The partial derivative of the loss function with respect to the weights is given by:
+### Gradient with respect to weights:
+The partial derivative of the loss function with respect to the weights is given by:
 
-   $$
-   \nabla_{\mathbf{w}} J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} (y_{\text{pred}}^{(i)} - y^{(i)}) \cdot \mathbf{x}^{(i)}
-   $$
+$$ 
+\nabla_{\mathbf{w}} J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} (y_{\text{pred}}^{(i)} - y^{(i)}) \cdot \mathbf{x}^{(i)} 
+$$
 
-2. **Gradient with respect to bias:**  
-   The partial derivative of the loss function with respect to the bias is given by: 
+### Gradient with respect to bias:
+The partial derivative of the loss function with respect to the bias is given by:
 
-   $$
-   \nabla_{b} J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} (y_{\text{pred}}^{(i)} - y^{(i)})
-   $$
+$$ 
+\nabla_{b} J(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} (y_{\text{pred}}^{(i)} - y^{(i)}) 
+$$
 
 ### Learning Rate Considerations
 The learning rate $$\alpha$$ is a critical hyperparameter in the gradient descent algorithm. If the learning rate is too small, convergence will be slow, requiring many iterations to reach the minimum. Conversely, if the learning rate is too large, the algorithm may overshoot the minimum, leading to divergence. It is essential to choose an appropriate learning rate to ensure efficient convergence.

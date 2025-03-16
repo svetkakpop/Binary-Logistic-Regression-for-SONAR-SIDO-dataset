@@ -1,8 +1,5 @@
 # Logistic Regression for Sonar/SIDO Data Classification
 
-**Author:** Anastasiia Larionova  
-**Date:** 05.03.2025 - 06.03.2025
-
 ## Introduction
 Machine learning has a wide range of applications across various fields, demonstrating its versatility and importance. Notable examples include:
 

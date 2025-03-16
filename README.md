@@ -1,5 +1,7 @@
 # Logistic Regression for Sonar/SIDO Data Classification
 
+**Author:** Anastasiia Larionova  
+**Date:** 05.03.2025 - 06.03.2025
 
 ## Introduction
 Machine learning has a wide range of applications across various fields, demonstrating its versatility and importance. Notable examples include:
@@ -24,18 +26,18 @@ Let’s define the components of our model:
 
 - **Input Vector:** Let $$\mathbf{x}$$ be the input vector, where 
   $$\mathbf{x} = [x_1, x_2, \ldots, x_n]$$
-  - $$\mathbf{x}$$ — это вектор входных данных, представляющий собой набор признаков (фич), используемых для классификации.
-  - $$n$$ — количество признаков.
+  - $$\mathbf{x}$$ is the input data vector, representing a set of features used for classification.
+  - $$n$$ is the number of features.
 
 - **Output:** Let $$y$$ be the output label, which can take values 0 or 1 for binary classification.
-  - $$y$$ — это метка выходных данных, которая указывает на класс, к которому принадлежит объект (0 или 1).
+  - $$y$$ is the output label indicating the class to which the object belongs (0 or 1).
 
 - **Weights:** Let $$\mathbf{w}$$ be the weight vector associated with the input features, where 
   $$\mathbf{w} = [w_1, w_2, \ldots, w_n]$$
-  - $$\mathbf{w}$$ — это вектор весов, который определяет важность каждого признака в процессе классификации.
+  - $$\mathbf{w}$$ is the weight vector that determines the importance of each feature in the classification process.
 
 - **Bias:** Let $$b$$ be the bias term.
-  - $$b$$ — это смещение, которое позволяет модели лучше подстраиваться под данные.
+  - $$b$$ is the bias that allows the model to better fit the data.
 
 In summary, the model takes an input vector $$\mathbf{x}$$ of dimension $$n$$, applies the weights $$\mathbf{w}$$ of the same dimension, adds the bias $$b$$, and produces a scalar output $$y$$.
 
@@ -52,8 +54,8 @@ $$
 z = \mathbf{X} \cdot \mathbf{w} + b
 $$ 
 
-- $$\sigma(z)$$ — это сигмоидная функция, которая преобразует линейную комбинацию входных данных в вероятность.
-- $$z$$ — это линейная комбинация входных данных, которая рассчитывается как скалярное произведение вектора входных данных и вектора весов, с добавлением смещения.
+- $$\sigma(z)$$ is the sigmoid function that transforms the linear combination of input data into a probability.
+- $$z$$ is the linear combination of input data calculated as the dot product of the input data vector and the weight vector, plus the bias.
 
 To obtain the predicted labels $$y_{\text{pred}}$$, we apply a threshold to the output of the logistic function. Specifically, if the predicted probability $$\sigma(z)$$ is greater than or equal to 0.5, we classify the instance as 1 (positive class); otherwise, we classify it as 0 (negative class):
 
